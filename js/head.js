@@ -1,0 +1,11 @@
+var head = dom.querySelector('head');
+var charset = dom.createElement('meta');
+var viewPort = dom.createElement('meta');
+var title = dom.createElement('title');
+viewPort.setAttribute('name', 'viewport');
+viewPort.setAttribute('content','width=device-width, initial-scale=1.0');
+title.textContent = "Shop Manager";
+charset.setAttribute('charset', 'utf-8');
+head.appendChild(charset);
+head.appendChild(title);
+head.appendChild(viewPort);
